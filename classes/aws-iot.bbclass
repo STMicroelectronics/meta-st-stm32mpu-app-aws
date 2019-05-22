@@ -1,0 +1,1 @@
+../../../meta-digi-thud/meta-digi-dey/classes/aws-iot.bbclass
