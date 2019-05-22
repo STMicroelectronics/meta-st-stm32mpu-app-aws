@@ -1,0 +1,35 @@
+{
+    "coreThing": {
+        "thingArn": "[THING_ARN_HERE]",
+        "iotHost": "[HOST_PREFIX_HERE]-ats.iot.[AWS_REGION_HERE].amazonaws.com",
+        "ggHost": "greengrass-ats.iot.[AWS_REGION_HERE].amazonaws.com",
+        "keepAlive" : 600
+    },
+    "runtime": {
+        "cgroup": {
+            "useSystemd": "yes"
+        }
+    },
+    "managedRespawn": false,
+    "crypto": {
+        "caPath" :  "file:///greengrass/certs/root.ca.pem",
+        "PKCS11": {
+           "P11Provider": "/usr/lib/libtpm2_pkcs11.so.0",
+           "slotLabel": "greengrass",
+           "slotUserPin": "123456"
+        },
+        "principals": {
+            "IoTCertificate": {
+                "privateKeyPath": "pkcs11:token=greengrass;object=greenkey;type=private;pin-value=123456",
+                "certificatePath": "file:///greengrass/certs/[xxxxxxxx-certificate.pem.crt]"
+            },
+            "SecretsManager": {
+                "privateKeyPath": "pkcs11:token=greengrass;object=greenkey;type=private;pin-value=123456"
+            },
+            "MQTTServerCertificate": {
+                "privateKeyPath": "pkcs11:token=greengrass;object=greenkey;type=private;pin-value=123456",
+                "certificatePath": "file:///greengrass/certs/[xxxxxxxx-certificate.pem.crt]"
+            }
+        }
+    }
+}

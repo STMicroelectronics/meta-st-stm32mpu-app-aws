@@ -1,0 +1,41 @@
+[
+  {
+    "id": "<pool-idSTMSECU>",
+    "sku": "STM32MP157C-DK2-TPM",
+    "features": [
+      {
+        "name": "os",
+        "value": "linux"
+      },
+      {
+        "name": "arch",
+        "value": "armv7l"
+      }
+    ],
+    "hsm": {
+      "p11Provider": "/usr/lib/libtpm2_pkcs11.so.0",
+      "slotLabel": "greengrass",
+      "slotUserPin": "123456",
+      "privateKeyLabel": "greenkey",
+      "openSSLEngine": "/usr/lib/engines-1.1/pkcs11.so"
+    },
+    "kernelConfigLocation": "",
+    "greengrassLocation": "/greengrass",
+    "devices": [
+      {
+        "id": "<device-id>",
+        "connectivity": {
+          "protocol": "ssh",
+          "ip": "<ip-address>",
+          "auth": {
+            "method": "pki",
+            "credentials": {
+              "user": "root",
+              "privKeyPath": "/home/<user>/.ssh/id_rsa"
+            }
+          }
+        }
+      }
+    ]
+  }
+]
