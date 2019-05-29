@@ -17,5 +17,9 @@ https://aws.amazon.com/fr/greengrass/
    > * Select your DISTRO (ex: openstlinux-weston)
    > * Select the awsgreengrass MACHINE (ex: stm32mp1-awsgreengrass)
 
+* Enable TPM build
+   > * edit [your STM32MP1 Distribution path]/layers/meta-st/meta-st-openstlinux/conf/distro/include/openstlinux.inc
+   > * uncomment #DISTRO_FEATURES_append = " tpm2 "
+
 * Build your image
    > bitbake st-image-awsgreengrass
