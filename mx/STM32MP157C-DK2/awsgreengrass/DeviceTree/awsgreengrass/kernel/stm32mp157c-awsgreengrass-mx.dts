@@ -1193,6 +1193,7 @@ memory-region = <&retram>, <&mcuram>, <&mcuram2>, <&vdev0vring0>,
 	status = "okay";
 
         st33zp24-0 {
+                status="okay";
                 compatible = "st,st33htpm-spi";
                 #address-cells = <1>;
                 #size-cells = <0>;
@@ -1202,4 +1203,3 @@ memory-region = <&retram>, <&mcuram>, <&mcuram2>, <&vdev0vring0>,
 };
 
 /* USER CODE END addons */
-
