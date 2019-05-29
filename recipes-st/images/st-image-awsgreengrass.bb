@@ -10,6 +10,7 @@ PREFERRED_VERSION_greengrass = "1.8.0"
 IMAGE_AWSGREENGRASS_PART = "   \
     greengrass \
     openssl \
+    tpm2-pkcs11 \
 "
 
 #
