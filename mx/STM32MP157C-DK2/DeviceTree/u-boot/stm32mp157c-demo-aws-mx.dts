@@ -18,7 +18,7 @@
 
 / {
 	model = "STMicroelectronics STM32MP157C-DK2 STM32CubeMX board";
-	compatible = "st,stm32mp157c-awsgreengrass-mx", "st,stm32mp157";
+	compatible = "st,stm32mp157c-demo-aws-mx", "st,stm32mp157";
 
 	memory@c0000000 {
 		reg = <0xc0000000 0x20000000>;
@@ -1185,4 +1185,3 @@ memory-region = <&retram>, <&mcuram>, <&mcuram2>, <&vdev0vring0>,
 	sram = <&dma_pool>;
 };
 /* USER CODE END addons */
-

@@ -1,4 +1,4 @@
-## meta-st-stm32mpu-app-awsgreengrass
+## meta-st-stm32mpu-app-demo-aws
 
 OpenEmbedded meta layer to install a AWS greengrass application.
 
@@ -23,7 +23,7 @@ https://aws.amazon.com/fr/greengrass/
 * Setup the build environement
    > source [your STM32MP1 Distribution path]/layers/meta-st/scripts/envsetup.sh
    > * Select your DISTRO (ex: openstlinux-weston)
-   > * Select the awsgreengrass MACHINE (ex: stm32mp1-awsgreengrass)
+   > * Select the demo-aws MACHINE (ex: stm32mp1-demo-aws)
 
 * Build your image
-   > bitbake st-image-awsgreengrass
+   > bitbake st-image-demo-aws

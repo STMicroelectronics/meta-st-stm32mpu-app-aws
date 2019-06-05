@@ -19,7 +19,7 @@
 
 / {
 	model = "STMicroelectronics STM32MP157C-DK2 STM32CubeMX board";
-	compatible = "st,stm32mp157c-awsgreengrass-mx", "st,stm32mp157";
+	compatible = "st,stm32mp157c-demo-aws-mx", "st,stm32mp157";
 
 	/* USER CODE BEGIN root */
 	chosen {
@@ -517,4 +517,3 @@
 
 /* USER CODE BEGIN addons */
 /* USER CODE END addons */
-
