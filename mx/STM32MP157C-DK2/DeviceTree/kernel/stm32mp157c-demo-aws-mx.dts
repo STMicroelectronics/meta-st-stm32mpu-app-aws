@@ -1192,7 +1192,7 @@ memory-region = <&retram>, <&mcuram>, <&mcuram2>, <&vdev0vring0>,
 	cs-gpios = <&gpiof 6 0>;
 	status = "okay";
 
-        st33zp24-0 {
+        st33htpm0: st33htpm@0{
                 status="okay";
                 compatible = "st,st33htpm-spi";
                 #address-cells = <1>;
