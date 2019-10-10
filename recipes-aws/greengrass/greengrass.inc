@@ -8,16 +8,21 @@ CONFIGURATION_DIRECTORY = "config"
 LICENSE = "Apache-2.0 | BSD-2-Clause | BSD-3-Clause | MIT | PD | Proprietary"
 
 SRC_URI_arm = " \
-    http:///not/exist/greengrass-linux-armv7l-${PV}.tar.gz;name=arm \
+    https://d1onfpft10uf5o.cloudfront.net/greengrass-core/downloads/${PV}/greengrass-linux-armv7l-${PV}.tar.gz;name=arm \
     file://greengrass.service \
     file://greengrass-init \
+    file://config_secu_example.json \
+    file://tpm_update.sh \
 "
 
-SRC_URI_aarch64 = " \
-    http:///not/exist/greengrass-linux-aarch64-${PV}.tar.gz;name=aarch64 \
-    file://greengrass.service \
-    file://greengrass-init \
-"
+
+#SRC_URI_aarch64 = " \
+#    http:///not/exist/greengrass-linux-aarch64-${PV}.tar.gz;name=aarch64 \
+#    file://greengrass.service \
+#    file://greengrass-init \
+#"
+
+
 
 GG_TARBALL_LOCAL_PATH ?= ""
 
