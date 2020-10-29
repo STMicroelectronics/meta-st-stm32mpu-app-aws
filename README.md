@@ -1,4 +1,4 @@
-## meta-st-stm32mpu-app-demo-aws
+## meta-st-stm32mpu-app-aws
 ## OpenEmbedded meta layer to install a AWS greengrass application.
 
 ref : https://aws.amazon.com/fr/greengrass/
@@ -22,7 +22,6 @@ ref : [STM32MP1 Distribution Package - OpenSTLinux distribution](https://wiki.st
 
 #### Clone following git repository into [your STM32MP1 Distribution path]/layers/meta-st/
  > **PC $>** cd [your STM32MP1 Distribution path]/layers/meta-st<br>
- > **PC $>** (ST internal) git clone ssh://${USER}@gerrit.st.com:29418/stm32mpuapp/meta/meta-st-stm32mpu-app-aws.git<br>
  > **PC $>** git clone https://github.com/STMicroelectronics/meta-st-stm32mpu-app-aws.git<br>
  > **PC $>** cd meta-st-stm32mpu-app-aws<br>
  > **PC $>** git checkout remotes/origin/dunfell
@@ -36,7 +35,6 @@ ref : [STM32MP1 Distribution Package - OpenSTLinux distribution](https://wiki.st
 #### Setup the build environment
 Executes the command, on the host :
  > **PC $>** cd [your STM32MP1 Distribution path]<br>
- > **PC $>** (ST internal) DISTRO=openstlinux-weston MACHINE=stm32mp1-demo-aws source layers/meta-st/scripts/envsetup-cache.sh<br>
  > **PC $>** DISTRO=openstlinux-weston MACHINE=stm32mp1-demo-aws source layers/meta-st/scripts/envsetup.sh
 
 #### Add Virtualization (docker) in OpenSTLinux distribution
